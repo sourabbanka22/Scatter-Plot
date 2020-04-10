@@ -1,0 +1,44 @@
+.graph {
+  display: block;
+  margin: auto;
+  background-color:white;
+}
+
+body {
+  font: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 99%;
+  height: 100%;
+  animation: addEffect 0.4s 0.75s cubic-bezier(.22,-0.3,.68,1.44) both;
+}
+
+.dot{
+  stroke: #000;
+  opacity: 0.8;
+}
+
+div.tooltip {	
+  position: absolute;			
+  padding: 10px;
+  font: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;		
+  background: lightyellow;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
+}
+
+@keyframes addEffect {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
